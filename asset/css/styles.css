@@ -6,6 +6,7 @@ font-family: jeremydosis;
   }
 *{
   box-sizing: border-box;
+  font-family: jeremypop;
 }
 body{
   
@@ -20,28 +21,95 @@ body{
   background-image: url(/asset/images/vibrant-som-tum-salad-striking-red-backdrop_194498-20579.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
+  height: 350px;
+  align-items: center; 
   /* background: rgb(211,33,0);
 background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); */
+
 }
-.explore{
-  font-size: 4rem;
+.nav-bg{
+  background: linear-gradient(110deg, rgba(250,206,7,1) 5%, rgba(250,206,7,1) 22%, rgba(250,243,7,1) 44%, rgba(250,206,7,1) 66%) !important;
+}
+.explore {
+  font-size: 4.3rem;
   color:#fff;
-  font-family: jeremypop
+  font-family: jeremypop;
+  display: flex;
   
 }
-.menu-sect{
-  background: rgb(250,206,7);
-  background: linear-gradient(110deg, rgba(250,206,7,1) 5%, rgba(250,206,7,1) 22%, rgba(250,243,7,1) 44%, rgba(250,206,7,1) 66%);
-
+.explore h1{
+  margin-top: 105px;
 }
-.menu-h1{
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 100%;
+  margin-top: 50px; 
+}
+
+.menu a{
+  width: 32%;
   text-align: center;
-  font-family:jeremypop
+  border: solid 3px rgb(250,206,7);
+  font-size: 1.5rem;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;text-decoration: none;
+}
+.menu a:hover{
+  color: #a69c64;
+}
+.gif-orde{
+  width: 100%;
+  position: relative;
+}
+.gif-orde img{
+  width: 100%;
+}
+.order-now{
+  position: absolute;
+  bottom: 5%;
+ left:31%;
 
 }
+.order-now a{
+  text-decoration: none;
+}
+.order-now button{
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  color: rgb(250,206,7);
+  text-transform: uppercase;
+  background-color: ;
+  
+}
+.featured-section{
+  margin-top: 10px;
+}
+.featured-section h1{
+  text-align: center;
+  
+}
+.food-main{
+  /* position: relative; */
+}
+.food-des-mai{
+  /* position: absolute; */
+  
+  text-align: center;
+}
+.food-main img{
+  height: 270px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -50,4 +118,8 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   .explore{
    padding-left: 520px; 
   }
+
+ 
+
+
 }
