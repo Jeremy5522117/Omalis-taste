@@ -20,7 +20,8 @@ body{
 .view-page{
   background-image: url(/asset/images/vibrant-som-tum-salad-striking-red-backdrop_194498-20579.avif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:auto;
+  background-position: ;
   height: 350px;
   align-items: center; 
   /* background: rgb(211,33,0);
@@ -46,13 +47,14 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   justify-content: center;
  width: 100%;
   margin-top: 50px; 
+  letter-spacing: 8px;
 }
 
 .menu a{
   width: 32%;
   text-align: center;
   border: solid 3px rgb(250,206,7);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 3px;
   color: #fff;
   font-weight: bold;text-decoration: none;
@@ -77,21 +79,33 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   
 }
 .order-now button{
-  width: 150px;
-  height: 40px;
-  border-radius: 5px;
+  width: 170px;
+  height: 57px;
+  border-radius: 7px;
   color: rgb(250,206,7);
   text-transform: uppercase;
   background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
   border-color: rgb(250,206,7);
-  
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  animation: mymove 2.5s infinite;
+}
+
+
+
+@keyframes mymove{
+  from{color: rgb(250,206,7)}
+  to{color:#fff}
 }
 .featured-section{
-  margin-top: 10px;
+  margin-top: 60px;
 }
 .featured-section h1{
   text-align: center;
-  
+  font-size:2.4rem;
+  border: solid  rgb(250,206,7);
+  background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);;
+  color: white;
 }
 .food-main{
   margin-top: 10px;
@@ -119,7 +133,7 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
 }
 
 .see-all-food a{
-  width: 42%;
+  width: 50%;
   text-align: center;
   border: solid 3px rgb(250,206,7);
   font-size: 1.5rem;
@@ -127,6 +141,7 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   color: #fff;
   font-weight: bold;text-decoration: none;
   background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
+  letter-spacing: 4px;
 }
 
 
