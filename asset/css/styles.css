@@ -12,6 +12,18 @@ font-family: jeremydosis;
 body{
   
 }
+.login{
+  margin-top: 10px;
+  background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
+  border-radius: 9px;
+  border: none;
+}
+.login a{
+text-decoration: none;
+color: #fff;;
+
+
+}
 .omali{
   border-radius: 20px;
 }
