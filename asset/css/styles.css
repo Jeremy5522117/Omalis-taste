@@ -7,6 +7,7 @@ font-family: jeremydosis;
 *{
   box-sizing: border-box;
   font-family: jeremypop;
+  background-color:;
 }
 body{
   
@@ -90,7 +91,9 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   letter-spacing: 3px;
   animation: mymove 2.5s infinite;
 }
-
+small{
+  font-size: 0.9rem;
+}
 
 
 @keyframes mymove{
@@ -98,56 +101,77 @@ background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); *
   to{color:#fff}
 }
 .featured-section{
-  margin-top: 60px;
+  margin-top: 40px;
 }
-.featured-section h1{
-  text-align: center;
-  font-size:2.4rem;
-  border: solid  rgb(250,206,7) 2px;
-  border-radius: 6px;
-  background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);;
-  color: white;
+.featured-div{
+  display: flex;
+  justify-content: space-around;
+}
+.featured-child{
+
+}
+.featured-child h5{
+  text-transform: uppercase;
+  color: rgb(211,33,0);;
+}
+.featured-see-all{
+
+}
+.featured-see-all a{
+text-decoration: none;
+color:  rgb(134, 75, 64);;
 }
 .food-main{
+  position: relative;
   margin-top: 10px;
+  width: 100%;
 }
 .food-des-mai{
-  font-size: 1.5rem;
-  
-  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 58%;
+  color: #fff;
+  padding-left: 5px;
+}
+.meal-descript{
+  font-size: 0.6rem;
+  font-weight: lighter;
 }
 .food-main img{
-  height: 270px;
-  border-radius: 120px;
+  height: 200px;
 }
 .hed{
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+ column-gap: 10px;
+ 
 }
 .see-all-food{
   display: flex;
   justify-content: center;
  width: 100%;
  height: 100px;
- 
   margin-top: 30px; 
   
 }
 
 .see-all-food a{
-  width: 70%;
-  height: 70px;
+  width: 45%;
+  height: 50px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 3px rgb(250,206,7);
-  font-size: 1.5rem;
-  border-radius: 9px;
-  color: #fff;
-  font-weight: bold;text-decoration: none;
-  background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
-  letter-spacing: 4px;
+  border: solid 1px rgb(211,33,0);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: rgb(211,33,0);
+  font-weight:100;text-decoration: none;
 }
 .see-all-food a:hover{
 color: #a69c64;
@@ -163,6 +187,7 @@ color: #a69c64;
 }
 .delivery-desc{
   font-size: 0.68rem;
+ 
 }
 
 
