@@ -206,7 +206,7 @@ color: #a69c64;
  
 }
 footer{
-  background: rgb(250,247,247);
+  
   background: linear-gradient(110deg, rgba(31,2,2,1) 100%, rgba(31,2,2,1) 100%);
   margin-top: 70px;
   flex:7;
@@ -225,10 +225,10 @@ footer{
 }
 .footer-flex{
   display: flex;
- column-gap: 4px;
+ column-gap: 10px;
 }
 .footer-flex h5{
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgb(250,206,7);
 }
 .footer-flex a{
@@ -238,11 +238,21 @@ footer{
 .footer-flex ul{
   list-style:none;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .footer-flex li{
   list-style:none;
-  line-height: 20px;
+  line-height: 25px;
+}
+.all-right{
+  margin: 8px;
+  border-top: solid #fff 1px;
+  text-align: center;
+  
+}
+.all-right span{
+ color: #9c9797;
+ font-size: 0.67rem;
   
 }
 
