@@ -15,8 +15,9 @@ body{
 .login{
   margin-top: 10px;
   background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
-  border-radius: 9px;
+  border-radius: 10px;
   border: none;
+  height: 30px;
 }
 .login a{
 text-decoration: none;
@@ -33,9 +34,9 @@ color: #fff;;
 .view-page{
   background-image: url(/asset/images/vibrant-som-tum-salad-striking-red-backdrop_194498-20579.avif);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:cover;
   background-position: ;
-  height: 350px;
+  height: 50vh;
   align-items: center; 
   /* background: rgb(211,33,0);
 background: linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%); */
@@ -206,34 +207,38 @@ color: #a69c64;
 }
 footer{
   background: rgb(250,247,247);
-  background: linear-gradient(110deg, rgba(250,247,247,1) 38%, rgba(250,247,247,1) 100%);
+  background: linear-gradient(110deg, rgba(31,2,2,1) 100%, rgba(31,2,2,1) 100%);
   margin-top: 70px;
+  flex:7;
+}
+.img-foot {
+  flex: 1;
+}
+.footer-divs{
+  flex: 5;
 }
 .footer-flex{
   display: flex;
- 
 }
 .footer-flex h5{
   font-size: 0.9rem;
+  color: #fff;
 }
 .footer-flex a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
-
-
-
-
-
-
-
-
+.footer-flex ul{
+  list-style:none;
+  padding: 0;
+}
+.footer-flex li{
+  list-style:none;
+}
 
 /* DESKTOP VIEW */
 @media screen and (min-width:1024px){
-  .explore{
-   padding-left: 520px; 
-  }
+  
   .hed{
     display: flex;
     flex-direction: row;
