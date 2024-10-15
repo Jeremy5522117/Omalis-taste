@@ -212,7 +212,13 @@ footer{
   flex:7;
 }
 .img-foot {
-  flex: 1;
+  text-align: center;
+}
+.img-foot {
+  text-align: center;
+}
+.img-foot img {
+  border-radius: 50px;
 }
 .footer-divs{
   flex: 5;
@@ -236,6 +242,8 @@ footer{
 }
 .footer-flex li{
   list-style:none;
+  line-height: 20px;
+  
 }
 
 /* DESKTOP VIEW */
