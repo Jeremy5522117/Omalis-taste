@@ -1,0 +1,26 @@
+@font-face{src:url(/asset/fonts/Dosis/Dosis-VariableFont_wght.ttf);
+  font-family: jeremydosis;
+  }
+  @font-face{src:url(/asset/fonts/Poppins/Poppins-ExtraBold.ttf);
+    font-family: jeremypop;
+    }
+  *{
+    box-sizing: border-box;
+    font-family: jeremypop;
+    background-color:;
+  }
+.our{
+  background-image: url(/asset/images/soup-bg.jpg);
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our a{
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff;
+}
+.men{
+  color: rgb(250,206,7);
+}
