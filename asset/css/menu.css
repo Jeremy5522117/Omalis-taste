@@ -17,10 +17,67 @@
   justify-content: center;
 }
 .our a{
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #fff;
 }
 .men{
   color: rgb(250,206,7);
+}
+.flex-menu-table{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 10px
+}
+.stew-menu-mother{
+position: relative;
+
+}
+.stew-menu-child{
+position: absolute;
+background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 53%;
+  
+}
+.menu-img{
+width: 100%;
+height: 200px;
+}
+.food-title{
+color: #fff;
+text-decoration: underline;
+}
+.food-dtls{
+  color: #fff;
+font-size: 0.6rem;
+}
+.list-divv{
+  width: 100%;
+  text-align: center;
+  
+}
+.btn-ord{
+  width: 100%;
+  background-color:rgb(211,33,0) ;
+  border: none;
+  color: rgb(250,206,7);
+}
+.listing{
+  background-color:rgb(250,206,7) ;
+}
+.listing input{
+  margin-left: 30px;
+}
+.sub-btn{
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  background-color:rgb(211,33,0) ;
+  color: #fff;
+  font-size: 0.9rem;
+  padding:0 9px;
 }
