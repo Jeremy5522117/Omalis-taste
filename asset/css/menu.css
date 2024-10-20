@@ -68,6 +68,7 @@ font-size: 0.6rem;
 }
 .listing{
   background-color:rgb(250,206,7) ;
+  line-height: 28px;
 }
 .listing input{
   margin-left: 30px;
