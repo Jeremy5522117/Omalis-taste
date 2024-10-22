@@ -8,6 +8,8 @@
     box-sizing: border-box;
     font-family: jeremypop;
     background-color:;
+    margin: 0;
+    padding: 0;
   }
 .our{
   background-image: url(/asset/images/soup-bg.jpg);
@@ -59,7 +61,7 @@ font-size: 0.8rem;
 }
 .list-divv{
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   
 }
 .input-radio{
@@ -74,17 +76,84 @@ font-size: 0.8rem;
 }
 .listing{
   background-color:rgb(250,206,7) ;
-  line-height: 28px;
-}
-.listing input{
-  margin-left: 30px;
 }
 .sub-btn{
   border: none;
-  border-radius: 15px;
-  margin-top: 10px;
+  border-radius: 10px;
+  margin:5px 0;
   background-color:rgb(211,33,0) ;
   color: #fff;
-  font-size: 0.9rem;
-  padding:0 9px;
+  font-size: 1rem;
+  padding:5px 20px;
+  text-align: center;
+
+}
+/* CHECKING THINGS */
+
+.wrapper{
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+ text-align: center;
+}
+.wrapper .box{
+  padding: 1px 5px;
+ 
+}
+.wrapper .box label{
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper .box label:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+}
+#option-1:checked ~ .option-1, #option-2:checked ~ .option-2, #option-3:checked ~ .option-3, #option-4:checked ~ .option-4 {
+  background-color:#d32100;
+  border-color: #d32100;
+}
+.wrapper .box label .dot{
+  height: 20px;
+  width: 20px;
+  background-color: #d9d9d9;
+  border-radius: 50%;position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot{
+ background-color: #fff;
+}
+.box label .dot::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius:50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,#option-2:checked ~ .option-2 .dot::before,#option-3:checked ~ .option-3 .dot::before,#option-4:checked ~ .option-4 .dot::before {
+background-color: #333;
+transform: translate(-50%,-50%) scale(1);
+}
+.wrapper .box label .text{
+  color: #000;
+  padding-left: 7px;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text{
+  color: #fff;
+}
+.wrapper .box input[type="radio"]{
+  display:none ;
 }
