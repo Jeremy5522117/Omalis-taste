@@ -157,5 +157,5 @@ transform: translate(-50%,-50%) scale(1);
   color: #fff;
 }
 .wrapper .box input[type="radio"]{
-  display: none;
+  display:none ;
 }
