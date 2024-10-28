@@ -110,6 +110,7 @@ font-size: 0.8rem;
   padding-left: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 .wrapper .box label:hover{
   background-color: lightgrey;
@@ -120,12 +121,13 @@ font-size: 0.8rem;
   border-color: #d32100;
 }
 .wrapper .box label .dot{
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   background-color: #d9d9d9;
   border-radius: 50%;position: relative;
   transition: all 0.3s ease;
 }
+
 #option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot{
  background-color: #fff;
 }
@@ -146,7 +148,7 @@ transform: translate(-50%,-50%) scale(1);
 }
 .wrapper .box label .text{
   color: #000;
-  padding-left: 7px;
+  padding-left: 5px;
 }
 #option-1:checked ~ .option-1 .text,
 #option-2:checked ~ .option-2 .text,
