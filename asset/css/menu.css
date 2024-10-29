@@ -116,7 +116,7 @@ font-size: 0.8rem;
   background-color: lightgrey;
   cursor: pointer;
 }
-#option-1:checked ~ .option-1, #option-2:checked ~ .option-2, #option-3:checked ~ .option-3, #option-4:checked ~ .option-4 {
+#option-1:checked ~ .option-1, #option-2:checked ~ .option-2, #option-3:checked ~ .option-3, #option-4:checked ~ .option-4, #option-5:checked ~ .option-1, #option-6:checked ~ .option-2, #option-7:checked ~ .option-3, #option-8:checked ~ .option-4,#option-9:checked ~ .option-1, #option-10:checked ~ .option-2, #option-11:checked ~ .option-3, #option-12:checked ~ .option-4,#option-13:checked ~ .option-1, #option-14:checked ~ .option-2, #option-15:checked ~ .option-3, #option-16:checked ~ .option-4{
   background-color:#d32100;
   border-color: #d32100;
 }
@@ -128,7 +128,7 @@ font-size: 0.8rem;
   transition: all 0.3s ease;
 }
 
-#option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot{
+#option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot,#option-5:checked ~ .option-1 .dot,#option-6:checked ~ .option-2 .dot,#option-7:checked ~ .option-3 .dot,#option-8:checked ~ .option-4 .dot,#option-9:checked ~ .option-1 .dot,#option-10:checked ~ .option-2 .dot,#option-11:checked ~ .option-3 .dot,#option-12:checked ~ .option-4 .do,#option-13:checked ~ .option-1 .dot,#option-14:checked ~ .option-2 .dot,#option-15:checked ~ .option-3 .dot,#option-16:checked ~ .option-4 .dott{
  background-color: #fff;
 }
 .box label .dot::before{
@@ -142,7 +142,7 @@ font-size: 0.8rem;
   border-radius:50%;
   transition: all 0.3s ease;
 }
-#option-1:checked ~ .option-1 .dot::before,#option-2:checked ~ .option-2 .dot::before,#option-3:checked ~ .option-3 .dot::before,#option-4:checked ~ .option-4 .dot::before {
+#option-1:checked ~ .option-1 .dot::before,#option-2:checked ~ .option-2 .dot::before,#option-3:checked ~ .option-3 .dot::before,#option-4:checked ~ .option-4 .dot::before,#option-5:checked ~ .option-1 .dot::before,#option-6:checked ~ .option-2 .dot::before,#option-7:checked ~ .option-3 .dot::before,#option-8:checked ~ .option-4 .dot::before,#option-9:checked ~ .option-1 .dot::before,#option-10:checked ~ .option-2 .dot::before,#option-11:checked ~ .option-3 .dot::before,#option-12:checked ~ .option-4 .dot::before,#option-13:checked ~ .option-1 .dot::before,#option-14:checked ~ .option-2 .dot::before,#option-15:checked ~ .option-3 .dot::before,#option-16:checked ~ .option-4 .dot::before {
 background-color: #333;
 transform: translate(-50%,-50%) scale(1);
 }
@@ -153,7 +153,16 @@ transform: translate(-50%,-50%) scale(1);
 #option-1:checked ~ .option-1 .text,
 #option-2:checked ~ .option-2 .text,
 #option-3:checked ~ .option-3 .text,
-#option-4:checked ~ .option-4 .text{
+#option-4:checked ~ .option-4 .text,#option-5:checked ~ .option-1 .text,
+#option-6:checked ~ .option-2 .text,
+#option-7:checked ~ .option-3 .text,
+#option-8:checked ~ .option-4 .text,#option-9:checked ~ .option-1 .text,
+#option-10:checked ~ .option-2 .text,
+#option-11:checked ~ .option-3 .text,
+#option-12:checked ~ .option-4 .text,#option-13:checked ~ .option-1 .text,
+#option-14:checked ~ .option-2 .text,
+#option-15:checked ~ .option-3 .text,
+#option-16:checked ~ .option-4 .text{
   color: #fff;
 }
 .wrapper .box input[type="radio"]{
