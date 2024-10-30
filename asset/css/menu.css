@@ -35,22 +35,53 @@
   text-transform: uppercase;
 }
 .food-head{
-  color: rgb(211,33,0) ;
+  color: #fff;
   animation: jeremy 5s linear infinite;
+  animation-play-state: running;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+ /* .food-head{
+  
+    display: flex;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      #7953cd 20%,
+      #00affa 30%,
+      #0190cd 70%,
+      #764ada 80%
+    );
+    background-size: 500% auto;
+    animation: animatedGradient 3s ease-in-out infinite;
+    animation-play-state: running;
+   
+ } */
 @keyframes jeremy{
-  from{ transform: translateX(-350px);}
-  to{ transform: translateX(350px);}
+  /* from{ transform: translateY(-350px);}
+  to{ transform: translateY(350px);} */
+  from{ transform: translateY(-10px);}
+  to{ transform: translateY(13px);}
+}
+/* @keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+} */
+.food-head:hover{
+  animation-play-state: paused;
 }
 .flex-menu-table{
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  column-gap: 10px;
+  column-gap: 7px;
   row-gap: 10px;
+  margin-top: -1px;
 }
 .stew-menu-mother{
 position: relative;
