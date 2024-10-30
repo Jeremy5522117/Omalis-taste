@@ -26,6 +26,25 @@
 .men{
   color: rgb(250,206,7);
 }
+.mother-food-head{
+  background-color:rgb(250,206,7) ;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.food-head{
+  color: rgb(211,33,0) ;
+  animation: jeremy 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes jeremy{
+  from{ transform: translateX(-350px);}
+  to{ transform: translateX(350px);}
+}
 .flex-menu-table{
   display: grid;
   grid-template-columns: 1fr 1fr;
