@@ -27,12 +27,13 @@
   color: rgb(250,206,7);
 }
 .mother-food-head{
-  background-color:rgb(250,206,7) ;
-  height: 45px;
+  background-color:rgb(250,206,7);
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  
 }
 .food-head{
   color: #fff;
@@ -40,7 +41,9 @@
   animation-play-state: running;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;box-shadow: 59px 58px 80px rgb(0, 0, 0, 0.2);
+  background-color:rgb(0, 0, 0, 0.2) ;
+  border-radius: 50%;
 }
  /* .food-head{
   
@@ -77,7 +80,7 @@
 }
 .flex-menu-table{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   width: 100%;
   column-gap: 7px;
   row-gap: 10px;
@@ -166,7 +169,15 @@ font-size: 0.8rem;
   background-color: lightgrey;
   cursor: pointer;
 }
-#option-1:checked ~ .option-1, #option-2:checked ~ .option-2, #option-3:checked ~ .option-3, #option-4:checked ~ .option-4, #option-5:checked ~ .option-1, #option-6:checked ~ .option-2, #option-7:checked ~ .option-3, #option-8:checked ~ .option-4,#option-9:checked ~ .option-1, #option-10:checked ~ .option-2, #option-11:checked ~ .option-3, #option-12:checked ~ .option-4,#option-13:checked ~ .option-1, #option-14:checked ~ .option-2, #option-15:checked ~ .option-3, #option-16:checked ~ .option-4{
+#option-1:checked ~ .option-1, #option-2:checked ~ .option-2, #option-3:checked ~ .option-3, #option-4:checked ~ .option-4, #option-5:checked ~ .option-1, #option-6:checked ~ .option-2, #option-7:checked ~ .option-3, #option-8:checked ~ .option-4,#option-9:checked ~ .option-1, #option-10:checked ~ .option-2, #option-11:checked ~ .option-3, #option-12:checked ~ .option-4,#option-13:checked ~ .option-1, #option-14:checked ~ .option-2, #option-15:checked ~ .option-3, #option-16:checked ~ .option-4,
+#option-17:checked ~ .option-1, #option-18:checked ~ .option-2, #option-19:checked ~ .option-3, #option-20:checked ~ .option-4,
+#option-21:checked ~ .option-1, #option-22:checked ~ .option-2, #option-23:checked ~ .option-3, #option-24:checked ~ .option-4,
+#option-25:checked ~ .option-1, #option-26:checked ~ .option-2, #option-27:checked ~ .option-3, #option-28:checked ~ .option-4,
+#option-29:checked ~ .option-1, #option-30:checked ~ .option-2, #option-31:checked ~ .option-3, #option-32:checked ~ .option-4,
+#option-33:checked ~ .option-1, #option-34:checked ~ .option-2, #option-35:checked ~ .option-3, #option-36:checked ~ .option-4,
+#option-37:checked ~ .option-1, #option-38:checked ~ .option-2, #option-39:checked ~ .option-3, #option-40:checked ~ .option-4,
+#option-41:checked ~ .option-1, #option-42:checked ~ .option-2, #option-43:checked ~ .option-3, #option-44:checked ~ .option-4,
+#option-45:checked ~ .option-1, #option-46:checked ~ .option-2, #option-47:checked ~ .option-3, #option-48:checked ~ .option-4{
   background-color:#d32100;
   border-color: #d32100;
 }
@@ -178,7 +189,14 @@ font-size: 0.8rem;
   transition: all 0.3s ease;
 }
 
-#option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot,#option-5:checked ~ .option-1 .dot,#option-6:checked ~ .option-2 .dot,#option-7:checked ~ .option-3 .dot,#option-8:checked ~ .option-4 .dot,#option-9:checked ~ .option-1 .dot,#option-10:checked ~ .option-2 .dot,#option-11:checked ~ .option-3 .dot,#option-12:checked ~ .option-4 .do,#option-13:checked ~ .option-1 .dot,#option-14:checked ~ .option-2 .dot,#option-15:checked ~ .option-3 .dot,#option-16:checked ~ .option-4 .dott{
+#option-1:checked ~ .option-1 .dot,#option-2:checked ~ .option-2 .dot,#option-3:checked ~ .option-3 .dot,#option-4:checked ~ .option-4 .dot,#option-5:checked ~ .option-1 .dot,#option-6:checked ~ .option-2 .dot,#option-7:checked ~ .option-3 .dot,#option-8:checked ~ .option-4 .dot,#option-9:checked ~ .option-1 .dot,#option-10:checked ~ .option-2 .dot,#option-11:checked ~ .option-3 .dot,#option-12:checked ~ .option-4 .do,#option-13:checked ~ .option-1 .dot,#option-14:checked ~ .option-2 .dot,#option-15:checked ~ .option-3 .dot,#option-16:checked ~ .option-4 .dott,#option-17:checked ~ .option-1 .dot,#option-18:checked ~ .option-2 .dot,#option-19:checked ~ .option-3 .dot,#option-20:checked ~ .option-4 .dott,
+#option-21:checked ~ .option-1 .dot,#option-22:checked ~ .option-2 .dot,#option-23:checked ~ .option-3 .dot,#option-24:checked ~ .option-4 .dott,
+#option-25:checked ~ .option-1 .dot,#option-26:checked ~ .option-2 .dot,#option-27:checked ~ .option-3 .dot,#option-28:checked ~ .option-4 .dott,
+#option-29:checked ~ .option-1 .dot,#option-30:checked ~ .option-2 .dot,#option-31:checked ~ .option-3 .dot,#option-32:checked ~ .option-4 .dott,
+#option-33:checked ~ .option-1 .dot,#option-34:checked ~ .option-2 .dot,#option-35:checked ~ .option-3 .dot,#option-36:checked ~ .option-4 .dott,
+#option-37:checked ~ .option-1 .dot,#option-38:checked ~ .option-2 .dot,#option-39:checked ~ .option-3 .dot,#option-40:checked ~ .option-4 .dott,
+#option-41:checked ~ .option-1 .dot,#option-42:checked ~ .option-2 .dot,#option-43:checked ~ .option-3 .dot,#option-44:checked ~ .option-4 .dott,
+#option-45:checked ~ .option-1 .dot,#option-46:checked ~ .option-2 .dot,#option-47:checked ~ .option-3 .dot,#option-48:checked ~ .option-4 .dott{
  background-color: #fff;
 }
 .box label .dot::before{
@@ -192,7 +210,14 @@ font-size: 0.8rem;
   border-radius:50%;
   transition: all 0.3s ease;
 }
-#option-1:checked ~ .option-1 .dot::before,#option-2:checked ~ .option-2 .dot::before,#option-3:checked ~ .option-3 .dot::before,#option-4:checked ~ .option-4 .dot::before,#option-5:checked ~ .option-1 .dot::before,#option-6:checked ~ .option-2 .dot::before,#option-7:checked ~ .option-3 .dot::before,#option-8:checked ~ .option-4 .dot::before,#option-9:checked ~ .option-1 .dot::before,#option-10:checked ~ .option-2 .dot::before,#option-11:checked ~ .option-3 .dot::before,#option-12:checked ~ .option-4 .dot::before,#option-13:checked ~ .option-1 .dot::before,#option-14:checked ~ .option-2 .dot::before,#option-15:checked ~ .option-3 .dot::before,#option-16:checked ~ .option-4 .dot::before {
+#option-1:checked ~ .option-1 .dot::before,#option-2:checked ~ .option-2 .dot::before,#option-3:checked ~ .option-3 .dot::before,#option-4:checked ~ .option-4 .dot::before,#option-5:checked ~ .option-1 .dot::before,#option-6:checked ~ .option-2 .dot::before,#option-7:checked ~ .option-3 .dot::before,#option-8:checked ~ .option-4 .dot::before,#option-9:checked ~ .option-1 .dot::before,#option-10:checked ~ .option-2 .dot::before,#option-11:checked ~ .option-3 .dot::before,#option-12:checked ~ .option-4 .dot::before,#option-13:checked ~ .option-1 .dot::before,#option-14:checked ~ .option-2 .dot::before,#option-15:checked ~ .option-3 .dot::before,#option-16:checked ~ .option-4 .dot::before,#option-17:checked ~ .option-1 .dot::before,#option-18:checked ~ .option-2 .dot::before,#option-19:checked ~ .option-3 .dot::before,#option-20:checked ~ .option-4 .dot::before,
+#option-21:checked ~ .option-1 .dot::before,#option-22:checked ~ .option-2 .dot::before,#option-23:checked ~ .option-3 .dot::before,#option-24:checked ~ .option-4 .dot::before,
+#option-25:checked ~ .option-1 .dot::before,#option-26:checked ~ .option-2 .dot::before,#option-27:checked ~ .option-3 .dot::before,#option-28:checked ~ .option-4 .dot::before,
+#option-29:checked ~ .option-1 .dot::before,#option-30:checked ~ .option-2 .dot::before,#option-31:checked ~ .option-3 .dot::before,#option-32:checked ~ .option-4 .dot::before,
+#option-33:checked ~ .option-1 .dot::before,#option-34:checked ~ .option-2 .dot::before,#option-35:checked ~ .option-3 .dot::before,#option-36:checked ~ .option-4 .dot::before,
+#option-37:checked ~ .option-1 .dot::before,#option-38:checked ~ .option-2 .dot::before,#option-39:checked ~ .option-3 .dot::before,#option-40:checked ~ .option-4 .dot::before,
+#option-41:checked ~ .option-1 .dot::before,#option-42:checked ~ .option-2 .dot::before,#option-43:checked ~ .option-3 .dot::before,#option-44:checked ~ .option-4 .dot::before,
+#option-45:checked ~ .option-1 .dot::before,#option-46:checked ~ .option-2 .dot::before,#option-47:checked ~ .option-3 .dot::before,#option-48:checked ~ .option-4 .dot::before {
 background-color: #333;
 transform: translate(-50%,-50%) scale(1);
 }
@@ -212,7 +237,39 @@ transform: translate(-50%,-50%) scale(1);
 #option-12:checked ~ .option-4 .text,#option-13:checked ~ .option-1 .text,
 #option-14:checked ~ .option-2 .text,
 #option-15:checked ~ .option-3 .text,
-#option-16:checked ~ .option-4 .text{
+#option-16:checked ~ .option-4 .text,
+#option-17:checked ~ .option-1 .text,
+#option-18:checked ~ .option-2 .text,
+#option-19:checked ~ .option-3 .text,
+#option-20:checked ~ .option-4 .text,
+#option-21:checked ~ .option-1 .text,
+#option-22:checked ~ .option-2 .text,
+#option-23:checked ~ .option-3 .text,
+#option-24:checked ~ .option-4 .text,
+#option-25:checked ~ .option-1 .text,
+#option-26:checked ~ .option-2 .text,
+#option-27:checked ~ .option-3 .text,
+#option-28:checked ~ .option-4 .text,
+#option-29:checked ~ .option-1 .text,
+#option-30:checked ~ .option-2 .text,
+#option-31:checked ~ .option-3 .text,
+#option-32:checked ~ .option-4 .text,
+#option-33:checked ~ .option-1 .text,
+#option-34:checked ~ .option-2 .text,
+#option-35:checked ~ .option-3 .text,
+#option-36:checked ~ .option-4 .text,
+#option-37:checked ~ .option-1 .text,
+#option-38:checked ~ .option-2 .text,
+#option-39:checked ~ .option-3 .text,
+#option-40:checked ~ .option-4 .text,
+#option-41:checked ~ .option-1 .text,
+#option-42:checked ~ .option-2 .text,
+#option-43:checked ~ .option-3 .text,
+#option-44:checked ~ .option-4 .text,
+#option-45:checked ~ .option-1 .text,
+#option-46:checked ~ .option-2 .text,
+#option-47:checked ~ .option-3 .text,
+#option-48:checked ~ .option-4 .text{
   color: #fff;
 }
 .wrapper .box input[type="radio"]{
