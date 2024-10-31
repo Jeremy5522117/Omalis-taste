@@ -61,6 +61,7 @@
     animation-play-state: running;
    
  } */
+
 @keyframes jeremy{
   /* from{ transform: translateY(-350px);}
   to{ transform: translateY(350px);} */
@@ -275,3 +276,53 @@ transform: translate(-50%,-50%) scale(1);
 .wrapper .box input[type="radio"]{
   display:none ;
 }
+.sticky-div{
+  background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
+  position: sticky;
+  bottom: 0;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ 
+ }
+ .child-cart{
+  position: relative;
+  margin-left: 7px;
+ }
+ .scond-chld-cart{
+  margin-right: 7px;
+ }
+ .numb-count{
+  position: absolute;
+  top: 0;
+  left:8%;
+  background-color:rgb(250,206,7);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+
+ }
+ .numb-count small{
+  font-size: 0.7rem;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-weight: bolder;
+ }
+ .cart-img{
+  font-size:25px ;
+  color: white;
+ }
+ .amount-sml{
+  margin-left: 8px;
+ }
+ .btn-checkout{ background-color:rgb(250,206,7);
+  padding: 7px 20px;
+  border: none;
+  border-radius: 6px;
+ }
