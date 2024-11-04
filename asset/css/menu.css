@@ -7,7 +7,6 @@
   *{
     box-sizing: border-box;
     font-family: jeremypop;
-    background-color:;
     margin: 0;
     padding: 0;
   }
@@ -26,13 +25,11 @@
 .men{
   color: rgb(250,206,7);
 }
-.hti{
-  padding: 0 20px;
-  background-color:rgb(250,206,7);
-}
+
 .free{
   box-shadow: -1px 5px 6px 7px rgb(0, 0, 0, 0.2);
-  border-radius: px;
+  border-radius:9px;
+ 
 }
 .mother-food-head{
   background-color:rgb(250,206,7);
@@ -86,17 +83,24 @@
 .food-head:hover{
   animation-play-state: paused;
 }
+.hti{
+  width:100%;
+  /* padding: 0 20px; */
+  background-color:rgb(250,206,7);
+}
 .flex-menu-table{
   display: grid;
-  grid-template-columns: 1fr  ;
+  grid-template-columns: 85%  ;
   width: 100%;
   row-gap: 20px;
   margin-top: -1px;
- 
+  text-align: center;
+  justify-content: center;
 }
 .stew-menu-mother{
 position: relative;
-
+border-top-left-radius:10px ;
+border-top-right-radius: 10px;
 }
 .stew-menu-child{
 position: absolute;
@@ -104,13 +108,12 @@ background-color: rgba(0,0,0,0.5);
   bottom: 0;
   left: 0;
   right: 0;
-  top: 55%;
-  
+  top: 66%; 
 }
 .menu-img{
 width: 100%;
 height: 157px;
-border-top-left-radius: 10px;
+border-top-left-radius:10px ;
 border-top-right-radius: 10px;
 }
 .food-title{
@@ -289,7 +292,7 @@ transform: translate(-50%,-50%) scale(1);
   background:linear-gradient(110deg, rgba(211,33,0,1) 0%, rgba(204,0,0,1) 91%);
   position: sticky;
   bottom: 0;
-  height: 45px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

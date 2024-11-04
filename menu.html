@@ -34,7 +34,9 @@
             </li>
            
             <li class="nav-item">
-              <a class="nav-link " aria-disabled="true">GALLERY</a>
+              <a class="nav-link " 
+              href="cart.html"
+              aria-disabled="true">CART <i class="bi bi-cart3"></i></a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -78,10 +80,12 @@
     
     
             <div class="box">
-              <input type="radio" name="select" id="option-1">
-              <input type="radio" name="select" id="option-2">
-              <input type="radio" name="select" id="option-3">
-              <input type="radio" name="select" id="option-4">
+              <input type="radio" name="select" id="option-1" value="1.4L - #20,000">
+              <input type="radio" name="select" id="option-2" value="2L - #25,000">
+              <input type="radio" name="select" id="option-3"
+              value="3L - #35,000">
+              <input type="radio" name="select" id="option-4"
+              value="4L - #42,000">
     
     
               <label for="option-1" class="option-1">
@@ -104,7 +108,7 @@
             </div>
     
             
-             <button type="submit" class="sub-btn">Add to Cart</button>
+             <button type="submit" class="sub-btn"  onclick="fn1()">Add to Cart</button>
            </div>
     
           </form>
@@ -197,7 +201,7 @@
 
 
         <div class="box">
-          <input type="radio" name="select" id="option-9">
+          <input type="radio" name="select" id="option-9" >
           <input type="radio" name="select" id="option-10">
           <input type="radio" name="select" id="option-11">
           <input type="radio" name="select" id="option-12">
@@ -808,4 +812,5 @@
 
 
 <script src="/asset/javascript/script.js"></script>
+<script src="asset/javascript/add-to-cart.js"></script>
 </html>
