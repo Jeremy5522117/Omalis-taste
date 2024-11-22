@@ -6,7 +6,7 @@ function fn1(){
   let rd4 = document.getElementById("option-4");
 
   if(rd1.checked==true)
-    {alert(rd1.value + " is added to cart");}
+    {console.log(rd1.value + " is added to cart");}
   else if(rd2.checked==true)
     {alert(rd2.value +" is added to cart");}
   else if(rd3.checked==true)
@@ -17,4 +17,5 @@ function fn1(){
   else{
     alert("Value is empty")
   }
+  
 }

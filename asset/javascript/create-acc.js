@@ -1,10 +1,10 @@
 const form = document.getElementById('form');
-const username = document.getElementById('username');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
+const firstname = document.getElementById('firstName');
+const lastname = document.getElementById('lastName');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const sub = document.getElementById('submit');
 
 //show error function
 function showError (input, message){
@@ -68,19 +68,21 @@ function getFieldName(input){
 
 //Event listenetrs
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
+   e.preventDefault();
   //SHORT CUT
-checkRequired([username, firstname, lastname, email, password, password2])
-checkLength(username, 5, 15 );
+checkRequired([firstname, lastname, email, password,password2])
+// checkLength(username, 5, 15 );
 checkLength(password,6,25);
 checkEmail(email);
 checkPasswordMatch(password, password2);
 
-  /*if (username.value === ''){
+if (username.value === ''){
     showError(username, 'username is required');
+    
   }
 else {
   showSuccess(username)
+
 };
 
 if (email.value === ''){
@@ -106,12 +108,6 @@ if (password2.value === ''){
 }
 else {
 showSuccess(password2)
-}*/
-});
-
-
-
-
-
-
+}
+})
 

@@ -1,7 +1,7 @@
-@font-face{src:url(/asset/fonts/Dosis/Dosis-VariableFont_wght.ttf);
+@font-face{src:url(asset/fonts/Dosis/Dosis-VariableFont_wght.ttf);
   font-family: jeremydosis;
   }
-  @font-face{src:url(/asset/fonts/Poppins/Poppins-ExtraBold.ttf);
+  @font-face{src:url(asset/fonts/Poppins/Poppins-ExtraBold.ttf);
     font-family: jeremypop;
     }
   *{

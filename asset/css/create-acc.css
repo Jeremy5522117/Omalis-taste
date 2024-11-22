@@ -1,7 +1,7 @@
-@font-face{src:url(/asset/fonts/Dosis/Dosis-VariableFont_wght.ttf);
+@font-face{src:url(asset/fonts/Dosis/Dosis-VariableFont_wght.ttf);
   font-family: jeremydosis;
   }
-  @font-face{src:url(/asset/fonts/Poppins/Poppins-ExtraBold.ttf);
+  @font-face{src:url(asset/fonts/Poppins/Poppins-ExtraBold.ttf);
     font-family: jeremydosis;
     }
 :root{
@@ -28,7 +28,7 @@ body{
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 400px;
-  background-image: url(/asset/images/vecteezy_cute-people-cooking-in-the-kitchen-concept_34094450.png);
+  background-image: url(asset/images/vecteezy_cute-people-cooking-in-the-kitchen-concept_34094450.png);
   background-repeat: no-repeat;
   background-size:100%;
   background-position: center;
@@ -91,6 +91,9 @@ margin-bottom: 5px;
   font-size:16px;
   font-weight: bolder;
 }
+.error{
+  color: red;
+}
 .form-control.error small{
   visibility: visible;
 }
@@ -117,4 +120,7 @@ margin-bottom: 5px;
 .already a{
   text-decoration: none;
   font-weight: bolder;
+}
+.text-danger{
+  color: red;
 }

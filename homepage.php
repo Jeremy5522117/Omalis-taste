@@ -1,3 +1,12 @@
+<?php 
+session_start();
+include("connection.php");
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,13 +23,20 @@
   
 </head>
 <body>
-  <header>
+ 
+  
+ <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="omali" src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" width="90px" alt=""></a>
+        
+          <a class="navbar-brand" href="#"><img class="omali" src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" width="90px" alt=""></a>
+       
+        
+   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -41,37 +57,54 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
           <form action="">
-            <button class="login"><a href="login.html">LOGIN</a></button>
+            <button class="login"><a href="logout.php">LOGOUT</a></button>
           </form>
         </div>
       </div>
     </nav>
+    
+
+          <div class="greetings">
+    <p class="try">
+       <?php
+
+      
+  
+  if(isset($_SESSION['email'])){
+    $email=$_SESSION['email'];
+    $query=mysqli_query($conn, "SELECT users.*FROM `users` WHERE users.email='$email' ");while($row=mysqli_fetch_array($query)){
+       echo "<span class='hwfa'>Howdy,</span> ". $row['firstname'];//.' '.$row['lastname'];
+    }
+  };
+  
+  ?>
+ 
+    </p>
+  </div>
   </header>
+
   
   <main>
+
 <div class="view-page">
 
   <div class="explore">
-    <h1>
-"Explore Our <br>Scrumptious <span style="color: rgb(250,206,7);
-  ">Omali's</span><br>Elegence & Tasty Creation"
-  </h1>
+      <h1>
+        "Explore Our <br>Scrumptious <span style="color: rgb(250,206,7);
+          ">Omali's</span><br>Elegence & Tasty Creation"
+    </h1>
   </div>
 
   <div class="menu">
-    <a href="menu.html"><span >MENU</span></a>
-    
-  </div>
+      <a href="menu.html"><span >MENU</span></a>
+      
+    </div>
+   
 </div>
 <!---------Product Slider------------>
 
 <div class="gif-orde">
   <img src="asset/images/online_food-gif.gif"  alt="">
-
-  <div class="order-now">
-    <a href="menu.html"><button >Order now</button></a>
-    
-  </div>
 
 </div>
 
@@ -81,7 +114,7 @@
     <div class="featured-child">
       <h5>Our Featured Food</h5>
     </div>
-    <div class="featured-see-all"><a href="menu.html">See all Food <i class="fa-solid fa-right-long"></i></a></div>
+   
   </div>
 
   
@@ -167,7 +200,7 @@
   </div>
 
   <div class="see-all-food">
-    <a href="menu.html"><span >See all Food >></span> <i class="bi bi-arrow-right-short"></i></a>
+  <a href="menu.html"><span >See all Food </span> <i class="bi bi-arrow-right-short"></i></a>
     
   </div>
 </section>
@@ -211,7 +244,10 @@
 
   </main>
 
+  <!-- BEGIN FOOTER -->
+
 <footer>
+
 <div class="footer-flex">
 
   <div class="footer-divs">
@@ -261,7 +297,7 @@
 
 </div>
 <div class="img-foot">
-    <img src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" alt="" width="90">
+    <img src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" alt="" width="105">
     
   </div> 
   <div class="all-right">
@@ -270,7 +306,7 @@
   </div>
 
 
-</footer>
+</footer> 
 
 
 
