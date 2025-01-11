@@ -47,14 +47,23 @@
 
 <main>
   <section class="empty-cart-sec">
-    <div>
+    <h3>Your Shopping Cart:</h3>
+    <ul id="cartItems"></ul>
+    <button id="clearCart">Clear Cart</button>
+    
+    <div id="emptyCartMessage" style="display: none;">
+
+
+     <div>
       <img src="asset/images/empty-cart.05cbdca5.svg" alt="">
     </div>
-    <div class="empty-text-div">
+    <div class="empty-text-div" id="emptyCartMessage" style="display: none;">
       <span class="empty-text-p1">Your cart is empty!</span>
       <p class="empty-text-p2"> Browse our Menu and select your favourite food & desert!</p>
     </div>
-    <a href="menu.html"> <button class="start-btn">START SHOPPING</button></a>
+    <a href="menu.html"> <button class="start-btn">START SHOPPING</button></a>  
+    </div>
+   
    
   </section>
 
@@ -76,4 +85,7 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="asset/javascript/shopon-cart.js">
+</script>
 </html>

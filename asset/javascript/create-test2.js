@@ -82,10 +82,14 @@ if (lastname ===""){
 
 
 //pass1
-//pass2
+//pass2/
+// $(document).ready(function(){
 
 
-
+//   $('.check-email').keyup(function (e){
+//     alert('hello')
+//   });
+// });
 
 
 

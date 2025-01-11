@@ -8,6 +8,23 @@
   --success-color: #23cc71;
   --error-color: #e74c3c;
 }
+.form-errer{
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.form-succ{
+  color: green;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.form-message{
+ text-align: center;
+  height: 5px;
+  margin-bottom: 3px;
+  display:flex;
+  justify-content: center;
+}
 
 *{
   box-sizing: border-box;

@@ -1,21 +1,35 @@
-function fn1(){
+// Function to initialize the Add to Cart functionality
+function initializeAddToCart() {
+  // Get all "Add to Cart" buttons
+  const addToCartButtons = document.querySelectorAll('.addToCart');
 
-  let rd1 = document.getElementById("option-1");
-  let rd2 = document.getElementById("option-2");
-  let rd3 = document.getElementById("option-3");
-  let rd4 = document.getElementById("option-4");
+  // Add event listeners to each button
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Find the selected radio button in the same group as the clicked button
+      const group = button.parentElement; // Parent container
+      const selectedItem = group.querySelector('input[type="radio"]:checked');
 
-  if(rd1.checked==true)
-    {console.log(rd1.value + " is added to cart");}
-  else if(rd2.checked==true)
-    {alert(rd2.value +" is added to cart");}
-  else if(rd3.checked==true)
-    {alert(rd3.value +" is added to cart");}
-  else if(rd4.checked==true)
-    {alert(rd4.value +" is added to cart");}
+      if (selectedItem) {
+        // Get the value of the selected item
+        const itemValue = selectedItem.value;
 
-  else{
-    alert("Value is empty")
-  }
-  
+        // Get existing cart items from localStorage or initialize an empty array
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the selected item to the cart array
+        cart.push(itemValue);
+
+        // Save the updated cart back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        alert(`${itemValue} added to the cart!`);
+      } else {
+        alert('Please select an item before adding to the cart.');
+      }
+    });
+  });
 }
+
+// Initialize the Add to Cart functionality
+initializeAddToCart();
