@@ -47,6 +47,7 @@ main{
   border: none;
   border-radius: 6px;
   background: linear-gradient(110deg, rgba(250,206,7,1) 5%, rgba(250,206,7,1) 22%, rgba(250,243,7,1) 44%, rgba(250,206,7,1) 66%) ;
+  font-weight: 700;
 }
 .check-outt{
   position: fixed;
