@@ -2,6 +2,7 @@
     const emptyCartMessage = document.getElementById('emptyCartMessage');
     const totalAmountElement = document.getElementById('totalAmount');
     const clearCartButton = document.getElementById('clearCart');
+    const showCheckOut = document.getElementById('footer-display');
     
     const changemessage = document.getElementById('cont')
    
@@ -33,7 +34,11 @@
         emptyCartMessage.style.display = 'none'; // Hide empty message
 
         clearCartButton.style.display = 'block'// show clear cart button
-        changemessage.innerHTML = 'Back to Shopping'
+        changemessage.innerHTML = 'Back to Shopping';
+
+        showCheckOut.style.display = 'block';
+
+        
 
          //Show back to shopping
         cart.forEach((item, index) => {
@@ -47,6 +52,7 @@
           removeButton.style.border = 'none';
           removeButton.style.borderRadius = '5PX';
           removeButton.style.width = '60px';
+          removeButton.style.marginLeft= '400px';
           removeButton.style.height = '24px'
           removeButton.style.fontSize = '0.8rem'
           removeButton.textContent = 'Remove';
@@ -62,6 +68,8 @@
 
         //Update total price
         totalAmountElement.textContent = formatPrice(calculateTotal());
+
+        showCheckOut.textContent = "Checkout #" + formatPrice(calculateTotal())
       } else {
         emptyCartMessage.style.display = 'block'; // Show empty message
         totalAmountElement.textContent = '0'; //reset total to 0
@@ -76,12 +84,22 @@
     }
 
     // Clear cart functionality
-    clearCartButton.addEventListener('click', () => {
-      localStorage.removeItem('cart'); // Clear the cart from localStorage
-      cart = []; // Reset the cart array
-      displayCart(); // Refresh the cart display
-      alert('Cart cleared!');
+      clearCartButton.addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear the cart?')) {
+        localStorage.removeItem('cart'); // Clear the cart from localStorage
+        location.reload(); // Reload the page to reflect the cleared cart
+      }
     });
 
     // Initial display of the cart
     displayCart();
+
+  
+
+
+
+
+
+
+
+    

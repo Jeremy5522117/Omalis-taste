@@ -97,6 +97,26 @@
   text-align: center;
   justify-content: center;
 }
+
+.successful-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.hiddens {
+  display: none;
+}
 .stew-menu-mother{
 position: relative;
 border-top-left-radius:10px ;
@@ -136,7 +156,7 @@ font-size: 0.8rem;
 }
 .btn-ord{
   width: 100%;
-  background-color:rgb(211,33,0) ;
+  background-color:#d32100 ;
   border: none;
   color: #face07;
 }
@@ -312,30 +332,30 @@ transform: translate(-50%,-50%) scale(1);
   position: absolute;
   top: 0;
   left:8%;
-  background-color:rgb(250,206,7);
-  width: 18px;
-  height: 18px;
+  background-color:#fff;
+  width: 19px;
+  height: 19px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
 
  }
  .numb-count small{
-  font-size: 0.7rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  
   display: flex;
   justify-content: center;
-  color: #fff;
-  font-weight: bolder;
+  color: #000;
+ 
  }
  .cart-img{
-  font-size:25px ;
-  color: white;
+  font-size:30px ;
+  color:#face07 
  }
  .amount-sml{
   margin-left: 8px;
  }
- .btn-checkout{ background-color:rgb(250,206,7);
+ .btn-checkout{ background-color:#face07;
   padding: 7px 20px;
   border: none;
   border-radius: 6px;

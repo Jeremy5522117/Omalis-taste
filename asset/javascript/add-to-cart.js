@@ -2,6 +2,8 @@
 // Get the Add to Cart buttons and cart counter
 const addToCartButtons = document.querySelectorAll('.addToCart');
 
+const successMessagesContainer = document.getElementById('successMessages');
+
 //function to update the cart counter
 function updateCartCounter(){
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -10,15 +12,31 @@ function updateCartCounter(){
     cartCounter.textContent = cart.length; // Update counter with the number of items
     cartCounter.style.display = 'block'; // Show the counter
   } else {
-    cartCounter.style.display = 'none'; // Hide the counter if no items
+    cartCounter.style.display = 'block'; // Hide the counter if no items
   }
 }
 
+  // Function to display the success message
+  function displaySuccessMessage(message) {
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('successful-message');
+    messageElement.textContent = message;
+
+    successMessagesContainer.appendChild(messageElement);
+
+    // Remove the message after 3 seconds
+    setTimeout(() => {
+      messageElement.remove();
+    }, 3000);
+  }
+
 // Add event listener for each button
 addToCartButtons.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (event) => {
+    event.preventDefault();
     const group = button.parentElement; // Parent container
     const selectedItem = group.querySelector('input[type="radio"]:checked');
+
 
     if (selectedItem) {
       const itemName = selectedItem.value; // Get the item name
@@ -36,7 +54,9 @@ addToCartButtons.forEach(button => {
       //upadate the cart counter
       updateCartCounter();
 
-      alert(`${itemName} (#${new Intl.NumberFormat('en-US').format(itemPrice)}) added to the cart!`);
+       // Display success message
+       displaySuccessMessage(`${itemName} has been successfully added to the cart!`);
+
     } else {
       alert('Please select an item before adding to the cart.');
     }

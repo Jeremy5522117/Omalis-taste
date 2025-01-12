@@ -47,6 +47,25 @@ main{
   border-radius: 6px;
   background: linear-gradient(110deg, rgba(250,206,7,1) 5%, rgba(250,206,7,1) 22%, rgba(250,243,7,1) 44%, rgba(250,206,7,1) 66%) ;
 }
+.check-outt{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 93%;
+  text-align: center;margin-top: ;
+}
+.check-out-btn{
+  width: 95%;
+  height: 95%;
+  border-radius: 30px;
+  background-color: #d32100 ;
+  color: #fff;
+  border: none;
+}
+.footer{
+  margin-top: 50px;
+}
 .items-list{
   padding-top: 35px;
 }
@@ -61,12 +80,15 @@ font-weight: bold;
   font-family:Arial, Helvetica, sans-serif;
 }
 .clearCat{
-  border:solid 1PX;
+  border:none;
   margin-top: 30px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.clear-div{
+  padding: 0 10px;
 }
 .cart-items{
   text-decoration: none;
@@ -82,6 +104,7 @@ font-weight: bold;
   display: flex;
   align-items: center;
 }
+
 
 .under-list{
   margin: 0;
