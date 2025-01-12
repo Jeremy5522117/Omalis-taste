@@ -69,7 +69,7 @@
         //Update total price
         totalAmountElement.textContent = formatPrice(calculateTotal());
 
-        showCheckOut.textContent = "Checkout #" + formatPrice(calculateTotal())
+        showCheckOut.textContent = "Checkout " + ' (#' + formatPrice(calculateTotal()) + ')'
       } else {
         emptyCartMessage.style.display = 'block'; // Show empty message
         totalAmountElement.textContent = '0'; //reset total to 0
