@@ -46,10 +46,27 @@
   </header>
 
 <main>
+  <p class="cart-p">CART SUMMARY</p>
+
+  <section class="sub-tot-sec">
+    <div class="sub-tot-div">
+      <div>
+        <span class="sub-t">Subtotal</span>
+      </div>
+      <div>
+        <span>#</span> <span id="totalAmount">0.00</span>
+      </div>
+    </div>
+   
+  </section>
+
+<section class="items-list">
+  <ul id="cartItems" class="under-list"></ul>
+ 
+</section>
+ <button id="clearCart"  class="clearCat" style="display: none;" >Clear Cart</button>
   <section class="empty-cart-sec">
-    <h3>Your Shopping Cart:</h3>
-    <ul id="cartItems"></ul>
-    <button id="clearCart">Clear Cart</button>
+    <!-- <h3>Your Shopping Cart:</h3> -->
     
     <div id="emptyCartMessage" style="display: none;">
 
@@ -57,28 +74,16 @@
      <div>
       <img src="asset/images/empty-cart.05cbdca5.svg" alt="">
     </div>
-    <div class="empty-text-div" id="emptyCartMessage" style="display: none;">
+    <div class="empty-text-div" >
       <span class="empty-text-p1">Your cart is empty!</span>
       <p class="empty-text-p2"> Browse our Menu and select your favourite food & desert!</p>
     </div>
-    <a href="menu.html"> <button class="start-btn">START SHOPPING</button></a>  
+     
     </div>
+     <a href="menu.html"> <button class="start-btn" id="cont">START SHOPPING</button></a>
    
    
-  </section>
-
-  <!-- <section>
-    <p class="cart-p">CART SUMMARY</p>
-
-    <div>
-      <div>
-        <p>Subtotal</p>
-        <p></p>
-      </div>
-      <div></div>
-    </div>
-   
-  </section> -->
+  </section> 
 </main>
   
 

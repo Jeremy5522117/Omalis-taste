@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Selection</title>
+  <style>
+    .cart-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .cart-counter {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+
+    .cart-image {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Choose items:</h3>
+
+  <!-- Group 1 -->
+  <div class="item-group">
+    <h4>Category 1</h4>
+    <label>
+      <input type="radio" name="category1" value="Item 1A" data-price="10000">
+      Item 1A - $10,000
+    </label><br>
+    <label>
+      <input type="radio" name="category1" value="Item 1B" data-price="15000">
+      Item 1B - $15,000
+    </label><br>
+    <button class="addToCart">Add to Cart</button>
+  </div>
+
+  <!-- Group 2 -->
+  <div class="item-group">
+    <h4>Category 2</h4>
+    <label>
+      <input type="radio" name="category2" value="Item 2A" data-price="20000">
+      Item 2A - $20,000
+    </label><br>
+    <label>
+      <input type="radio" name="category2" value="Item 2B" data-price="25000">
+      Item 2B - $25,000
+    </label><br>
+    <button class="addToCart">Add to Cart</button>
+  </div>
+
+  <!-- Cart Icon -->
+  <div class="cart-container">
+    <a href="cart.html">
+      <img src="cart.png" alt="Cart" class="cart-image">
+      <span id="cartCounter" class="cart-counter" style="display: none;">0</span>
+    </a>
+  </div>
+
+  <script>
+    // Get the Add to Cart buttons and cart counter
+    const addToCartButtons = document.querySelectorAll('.addToCart');
+    const cartCounter = document.getElementById('cartCounter');
+
+    // Function to update the cart counter
+    function updateCartCounter() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart.length > 0) {
+        cartCounter.textContent = cart.length; // Update counter with the number of items
+        cartCounter.style.display = 'block'; // Show the counter
+      } else {
+        cartCounter.style.display = 'none'; // Hide the counter if no items
+      }
+    }
+
+    // Add event listener for each Add to Cart button
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const group = button.parentElement; // Parent container
+        const selectedItem = group.querySelector('input[type="radio"]:checked');
+
+        if (selectedItem) {
+          const itemName = selectedItem.value; // Get the item name
+          const itemPrice = parseFloat(selectedItem.getAttribute('data-price')); // Get the item price
+
+          // Get existing cart items from localStorage or initialize an empty array
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+          // Add the selected item to the cart array
+          cart.push({ name: itemName, price: itemPrice });
+
+          // Save the updated cart back to localStorage
+          localStorage.setItem('cart', JSON.stringify(cart));
+
+          // Update the cart counter
+          updateCartCounter();
+
+          alert(`${itemName} ($${new Intl.NumberFormat('en-US').format(itemPrice)}) added to the cart!`);
+        } else {
+          alert('Please select an item before adding to the cart.');
+        }
+      });
+    });
+
+    // Initial cart counter update
+    updateCartCounter();
+  </script>
+</body>
+</html>

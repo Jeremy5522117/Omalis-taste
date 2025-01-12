@@ -1,54 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <h3>Your Shopping Cart:</h3>
+  <p id="emptyCartMessage" style="display: none;">Your cart is empty.</p>
+  <ul id="cartItems"></ul>
+  <h4>Total: $<span id="totalAmount">0</span></h4>
+  <button id="clearCart">Clear Cart</button>
+  <a href="index.html">
+    <button>Back to Shopping</button>
+  </a>
+
+  <script>
+    // Get references to elements
     const cartItemsList = document.getElementById('cartItems');
     const emptyCartMessage = document.getElementById('emptyCartMessage');
     const totalAmountElement = document.getElementById('totalAmount');
     const clearCartButton = document.getElementById('clearCart');
-    
-    const changemessage = document.getElementById('cont')
-   
 
     // Retrieve the cart items from localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-
- // Function to format price with a comma instead of a decimal
+    // Function to format price with a comma instead of a decimal
     function formatPrice(price) {
-      return new Intl.NumberFormat('en-US').format(price) ;
+      return price.toString().replace('.', ',');
     }
-    //function to calculate the total price
 
-    function calculateTotal(){
+    // Function to calculate the total price
+    function calculateTotal() {
       let total = 0;
-      cart.forEach(item=>{
-        total += item.price;
+      cart.forEach(item => {
+        total += item.price; // Sum up item prices
       });
-
-      return total.toFixed(2);
+      return total; // Return the raw total
     }
 
     // Function to display cart items
     function displayCart() {
       cartItemsList.innerHTML = ''; // Clear the list
       if (cart.length > 0) {
-        
         emptyCartMessage.style.display = 'none'; // Hide empty message
-
-        clearCartButton.style.display = 'block'// show clear cart button
-        changemessage.innerHTML = 'Back to Shopping'
-
-         //Show back to shopping
         cart.forEach((item, index) => {
           const listItem = document.createElement('li');
-          listItem.textContent = `${item.name} - #${formatPrice(item.price)}`; // Format price with a comma
+          listItem.textContent = `${item.name} - $${formatPrice(item.price)}`; // Format price with a comma
 
           // Create a "Remove" button
           const removeButton = document.createElement('button');
-          removeButton.style.backgroundColor = 'none';
-          removeButton.style.color = '#d32100';
-          removeButton.style.border = 'none';
-          removeButton.style.borderRadius = '5PX';
-          removeButton.style.width = '60px';
-          removeButton.style.height = '24px'
-          removeButton.style.fontSize = '0.8rem'
           removeButton.textContent = 'Remove';
           removeButton.style.marginLeft = '10px';
           removeButton.addEventListener('click', () => {
@@ -60,11 +61,11 @@
           cartItemsList.appendChild(listItem);
         });
 
-        //Update total price
+        // Update total price
         totalAmountElement.textContent = formatPrice(calculateTotal());
       } else {
         emptyCartMessage.style.display = 'block'; // Show empty message
-        totalAmountElement.textContent = '0'; //reset total to 0
+        totalAmountElement.textContent = '0'; // Reset total to 0
       }
     }
 
@@ -85,3 +86,6 @@
 
     // Initial display of the cart
     displayCart();
+  </script>
+</body>
+</html>
