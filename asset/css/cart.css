@@ -27,16 +27,13 @@ main{
   align-items: center;
   font-size: 1rem;
 }
-.sub-t{
-  
-}
+
 .empty-cart-sec{
   text-align: center;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 70vh; */
   justify-content: center;
   
   
@@ -55,7 +52,7 @@ main{
   right: 0;
   bottom: 0;
   top: 93%;
-  text-align: center;margin-top: ;
+  text-align: center;
 }
 .check-outt a{
   text-decoration: none;
@@ -98,6 +95,7 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #d32100;
 }
 .clear-div{
   padding: 0 10px;
