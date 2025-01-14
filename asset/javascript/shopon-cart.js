@@ -5,7 +5,7 @@
     const showCheckOut = document.getElementById('footer-display');
     
     const changemessage = document.getElementById('cont')
-   
+    
 
     // Retrieve the cart items from localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -26,6 +26,8 @@
       return total.toFixed(2);
     }
 
+    
+
     // Function to display cart items
     function displayCart() {
       cartItemsList.innerHTML = ''; // Clear the list
@@ -43,6 +45,7 @@
          //Show back to shopping
         cart.forEach((item, index) => {
           const listItem = document.createElement('li');
+          
           listItem.textContent = `${item.name} - #${formatPrice(item.price)}`; // Format price with a comma
 
           // Create a "Remove" button
@@ -69,12 +72,20 @@
         //Update total price
         totalAmountElement.textContent = formatPrice(calculateTotal());
 
-        showCheckOut.textContent = "Checkout " + ' (#' + formatPrice(calculateTotal()) + ')'
+        showCheckOut.textContent = "Checkout " + ' (#' + formatPrice(calculateTotal()) + ')';
+       // Store the total amount in localStorage for use in the payment page
+       localStorage.setItem('totalAmount', calculateTotal())
       } else {
         emptyCartMessage.style.display = 'block'; // Show empty message
         totalAmountElement.textContent = '0'; //reset total to 0
       }
     }
+
+     // Event listener for the checkout button
+     showCheckOut.addEventListener('click', () => {
+      // Save total amount to localStorage
+      window.location.href = 'checkout-page.html'; // Navigate to the payment page
+    });
 
     // Function to remove an item from the cart
     function removeFromCart(index) {

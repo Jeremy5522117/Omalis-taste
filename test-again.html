@@ -89,3 +89,64 @@
   </script>
 </body>
 </html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+</head>
+<body>
+  <div class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cartItems">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="total-price" id="totalPrice">Total: $0</div>
+    <button class="checkout" id="checkoutButton">Checkout</button>
+  </div>
+
+  <script>
+    const cartItemsContainer = document.getElementById('cartItems');
+    const totalPriceElement = document.getElementById('totalPrice');
+    const checkoutButton = document.getElementById('checkoutButton');
+
+    // Function to load cart items from localStorage
+    function loadCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        totalPriceElement.textContent = 'Total: $0';
+        return;
+      }
+
+      let total = 0;
+      cartItemsContainer.innerHTML = '';
+      cart.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `${item.name} - $${new Intl.NumberFormat('en-US').format(item.price)}`;
+        cartItemsContainer.appendChild(itemElement);
+        total += item.price;
+      });
+
+      const formattedTotal = new Intl.NumberFormat('en-US').format(total);
+      totalPriceElement.textContent = `Total: $${formattedTotal}`;
+      // Store the total amount in localStorage for use in the payment page
+      checkoutButton.dataset.total = total;
+    }
+
+    // Event listener for the checkout button
+    checkoutButton.addEventListener('click', () => {
+      const totalAmount = checkoutButton.dataset.total;
+      localStorage.setItem('totalAmount', totalAmount); // Save total amount to localStorage
+      window.location.href = 'test-anain23.html'; // Navigate to the payment page
+    });
+
+    // Load cart items on page load
+    loadCart();
+  </script>
+</body>
+</html> -->

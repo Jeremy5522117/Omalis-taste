@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment and Review</title>
+  <style>
+    .payment-container {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .total-price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .proceed-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .proceed-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Payment and Review</h2>
+    <div class="total-price" id="displayTotal">Total: $0</div>
+    <button class="proceed-button">Proceed to Payment</button>
+  </div>
+
+  <script>
+    // Retrieve and display the total amount from localStorage
+    const totalAmount = localStorage.getItem('totalAmount');
+    const displayTotalElement = document.getElementById('displayTotal');
+
+    if (totalAmount) {
+      const formattedTotal = new Intl.NumberFormat('en-US').format(totalAmount);
+      displayTotalElement.textContent = `Total: $${formattedTotal}`;
+    } else {
+      displayTotalElement.textContent = 'No items in the cart.';
+    }
+  </script>
+</body>
+</html> -->
