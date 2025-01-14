@@ -80,6 +80,13 @@ main{
   display: flex;
   background-color: #fff;
   padding:  8px;
+  align-items: center;
+}
+.pat{
+  margin-top:2px ;
+}
+.radio-pay{
+  padding-left: 40px;
 }
 .opay-img{
   
