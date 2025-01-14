@@ -7,8 +7,8 @@
    const deliveryCost = 769;
    const costWithDeliveryFee = totalAmount + deliveryCost;
 
-   displayTotalElement.style.fontSize = '0.8rem';
-   deliveryFee.style.fontSize = '0.8rem'
+   displayTotalElement.style.fontSize = '0.9rem';
+   deliveryFee.style.fontSize = '0.9rem'
 
    if (totalAmount) {
      const formattedTotal = new Intl.NumberFormat('en-US').format(totalAmount);

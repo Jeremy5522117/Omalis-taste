@@ -98,9 +98,14 @@ main{
 .opay-writ h4{
   font-size: 14px;
   margin: 0;
+  
 }
 .opay-writ p{
   font-size: 11px;
   margin: 0;
   padding: 2px 0 0 ;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
+
+
