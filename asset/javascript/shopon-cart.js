@@ -5,7 +5,7 @@
     const showCheckOut = document.getElementById('footer-display');
     
     const changemessage = document.getElementById('cont')
-    
+
 
     // Retrieve the cart items from localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -105,12 +105,3 @@
     // Initial display of the cart
     displayCart();
 
-  
-
-
-
-
-
-
-
-    
