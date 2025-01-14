@@ -27,7 +27,7 @@ header{
 .header-nav{
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 8px;
   font-size: 1.7rem;
 }
 .header-nav a{
@@ -40,10 +40,13 @@ main{
   height: 35px;
   display: flex;
   align-items: center;
+  padding: 0 16px 8px;
 }
 .sum-mother{
   background-color: #fff;
   line-height: 35px;
+  margin: 0 16px;
+  padding:4px 0;
 }
 .item-sum{
   display: flex;
@@ -56,4 +59,43 @@ main{
   height: 33px;
   align-items: center;
   margin-top: 1px;
+  ;
+}
+.payment-sec{
+  padding: 0 8px;
+}
+.payment-div{
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  align-items: center;
+}
+.pt-md{
+  padding: 0 8px;
+}
+.change{
+  color:#face07 ;
+}
+.pay-mtd{
+  display: flex;
+  background-color: #fff;
+  padding:  8px;
+}
+.opay-img{
+  
+}
+.opay-img img{
+ width: 40px;
+}
+.opay-writ{
+  padding: 0 0 0 8px;
+}
+.opay-writ h4{
+  font-size: 14px;
+  margin: 0;
+}
+.opay-writ p{
+  font-size: 11px;
+  margin: 0;
+  padding: 2px 0 0 ;
 }
