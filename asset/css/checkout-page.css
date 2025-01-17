@@ -107,5 +107,12 @@ main{
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.add-name h4{
+font-size:13px ;
+color: #1e1d1d;
+}
+.add-name p{
+  color: #565454;
+}
 
 
