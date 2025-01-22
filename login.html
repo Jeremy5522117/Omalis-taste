@@ -38,7 +38,7 @@
         <button type="submit" class="sign-up" name="signIn" 
         id="submit"
         > Login</button>
-        <div class="already">Don't have an account?<a href="create-acc.php" id="signUpButton">Sign Up</a></div>
+        <div class="already">Don't have an account?<a href="create-acc.html" id="signUpButton">Sign Up</a></div>
         
          <div class="form-message   msg"></div>
       </form>
@@ -51,48 +51,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery/3.2.0/jquery.min.js" ></script>
   <script>
-    $(document).ready(function(){
-     $("#submit").click(function(){
-      //  event.preventDefault();
-
-       
-       var email = $("#email").val();
-       var password = $("#password").val();
-      //  var submit = $("#submit").val();
-      //  $(".form-message").load("login-data.php", {
-      //  email: email,
-      //   password: password,
-      //   submit: submit
-
-      //  });
-       if(email =='' || password ==''){
-        $(".msg").html("Both fields are required")
-       }
-       $.ajax({
-        url: "login-data.php",
-        method:'post',
-        data:{email:email, password:password},
-        dataType:"JSON",
-        success: function(data){
-          if(data ['status'] == 1){
-            $(".msg").html(data['msg']);
-            window.location.href="homepage.php";
-          }
-        else{
-          $(".msg").html(data['msg']);
-        }
-        }
-       })
-
-
-     });
-
-    });
-
-
-  
-
-
+   
        
 </script>
   </script>
