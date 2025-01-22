@@ -23,20 +23,13 @@ $email = $_SESSION['email'];
   
 </head>
 <body>
- 
-  
- <header>
+  <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
       <div class="container-fluid">
-        
-          <a class="navbar-brand" href="#"><img class="omali" src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" width="90px" alt=""></a>
-       
-        
-   
+        <a class="navbar-brand" href="#"><img class="omali" src="asset/images/WhatsApp Image 2024-10-10 at 12.00.19_61691304.jpg" width="90px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -49,7 +42,13 @@ $email = $_SESSION['email'];
             <li class="nav-item">
               <a class="nav-link " 
               href="cart.html"
-              aria-disabled="true">CART <i class="bi bi-cart3 cart-img"></i></a>
+              aria-disabled="true">CART <i class="bi bi-cart3 "></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " 
+              href="home-address.html"
+              aria-disabled="true">ADDRESS BOOK </a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -57,30 +56,11 @@ $email = $_SESSION['email'];
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
           <form action="">
-            <button class="login"><a href="logout.php">LOGOUT</a></button>
+            <button class="login"><a href="login.html">LOGIN</a></button>
           </form>
         </div>
       </div>
     </nav>
-    
-
-          <div class="greetings">
-    <p class="try">
-       <?php
-
-      
-  
-  if(isset($_SESSION['email'])){
-    $email=$_SESSION['email'];
-    $query=mysqli_query($conn, "SELECT users.*FROM `users` WHERE users.email='$email' ");while($row=mysqli_fetch_array($query)){
-       echo "<span class='hwfa'>Howdy,</span> ". $row['firstname'];//.' '.$row['lastname'];
-    }
-  };
-  
-  ?>
- 
-    </p>
-  </div>
   </header>
 
   

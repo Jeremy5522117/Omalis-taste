@@ -4,15 +4,21 @@ const addToCartButtons = document.querySelectorAll('.addToCart');
 
 const successMessagesContainer = document.getElementById('successMessages');
 
+const updateCouter = document.getElementById('cartCounter');
+
 //function to update the cart counter
 function updateCartCounter(){
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
   
   if (cart.length > 0) {
-    cartCounter.textContent = cart.length; // Update counter with the number of items
-    cartCounter.style.display = 'block'; // Show the counter
+    updateCouter.textContent = cart.length; // Update counter with the number of items
+    updateCouter.style.display = 'block'; // Show the counter
+
+    // Save the updated cart back to localStorage
+    // Save the updated cart back to localStorage
+    localStorage.setItem('cartCounter', JSON.stringify(cartCounter));
   } else {
-    cartCounter.style.display = 'block'; // Hide the counter if no items
+    updateCouter.style.display = 'block'; // Hide the counter if no items
   }
 }
 

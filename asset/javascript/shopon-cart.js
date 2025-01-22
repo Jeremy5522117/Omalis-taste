@@ -3,12 +3,14 @@
     const totalAmountElement = document.getElementById('totalAmount');
     const clearCartButton = document.getElementById('clearCart');
     const showCheckOut = document.getElementById('footer-display');
-    
+    const counterDisp = document.getElementById('counter-display');
     const changemessage = document.getElementById('cont')
 
 
     // Retrieve the cart items from localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
 
 
  // Function to format price with a comma instead of a decimal
@@ -32,14 +34,12 @@
     function displayCart() {
       cartItemsList.innerHTML = ''; // Clear the list
       if (cart.length > 0) {
-        
         emptyCartMessage.style.display = 'none'; // Hide empty message
 
         clearCartButton.style.display = 'block'// show clear cart button
         changemessage.innerHTML = 'Back to Shopping';
 
         showCheckOut.style.display = 'block';
-
         
 
          //Show back to shopping

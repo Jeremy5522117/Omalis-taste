@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+body{
+  background-color: #e8e8ec !important;
+}
+header{
+  background: linear-gradient(110deg, rgba(250,206,7,1) 5%, rgba(250,206,7,1) 22%, rgba(250,243,7,1) 44%, rgba(250,206,7,1) 66%) ;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom:93% ;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center; 
+}
+.header-div{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  font-size: 1.7rem;
+}
+.header-nav a{
+  color: #000;
+}
+.contact-main-div{
+padding: 4px 8px;
+}
+.contact-child-div{
+background-color: #fff;
+padding: 0 8px;
+border-radius: 4px;
+}
+.main-name{
+font-size: 0.9rem;
+color: #313133;
+}
+.main-add{
+font-size: 0.8rem;
+color: #75757a;
+line-height: 1;
+
+}
+.main-num{
+font-size: 0.8rem;
+color: #75757a;
+}
+.default{
+font-size: 0.7rem;
+background-color: #f1f1f2;
+margin: 8px 0 0;
+padding: 1px 4px ;
+color: #75757a;
+
+
+}
+.make-dft-btn{
+  border: none;
+  background-color: transparent;
+  margin: 0 179px 0 0;
+  color: #918f8f;
+  font-size: 14px;
+}
+.delete-btn{
+  border: none;
+  background-color: transparent;
+  margin: 0 8px;
+  padding: 8px;
+  color:#face07;
+  font-size: 19px;
+}
+.pencil-edit{
+  padding: 8px;
+  color:#face07;
+  text-decoration: none;
+  font-size: 19px;
+}
