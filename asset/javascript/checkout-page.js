@@ -2,7 +2,8 @@
    const totalAmount = parseFloat(localStorage.getItem('totalAmount'));
    const displayTotalElement = document.getElementById('totalItm');
    const deliveryFee  = document.getElementById('deliveryCost')
-   const updateCounter = document.getElementById('updateItm')
+   const updateCounter = document.getElementById('updateItm');
+   const subTotal = document.getElementById('sub-total')
 
    const deliveryCost = 769;
    const costWithDeliveryFee = totalAmount + deliveryCost;
