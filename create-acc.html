@@ -13,30 +13,7 @@
   <script>
 
     
-    $(document).ready(function(){
-     $("#form").submit(function(event){
-       event.preventDefault();
-
-       var firstname = $("#firstName").val();
-       var lastname = $("#lastName").val();
-       var email = $("#email").val();
-       var password = $("#password").val();
-       var password2 = $("#password2").val();
-       var submit = $("#submit").val();
-       $(".form-message").load("create-data.php", {
-        firstname: firstname,
-        lastname: lastname,
-        email: email,
-        password: password,
-        password2: password2,
-        submit: submit
-
-       })
-
-
-     });
-
-    });
+   
   </script>
     <title>Form Validator</title>
     
