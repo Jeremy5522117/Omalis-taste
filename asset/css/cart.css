@@ -69,10 +69,10 @@ main{
   color: #fff;
   border: none;
 }
-.footer{
+footer{
   margin-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: c;
  
 }
 .items-list{

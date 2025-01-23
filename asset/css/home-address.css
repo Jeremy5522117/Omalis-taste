@@ -20,6 +20,7 @@ header{
   font-size: 1.3rem;
   display: flex;
   justify-content: center; 
+  z-index: 1;
 }
 .header-div{
   justify-content: center;
@@ -90,4 +91,7 @@ color: #75757a;
 }
 .color-change{
   color:#face07 ;
+}
+.check-outt{
+  background-color: #fff;
 }
